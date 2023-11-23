@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20231024 15:50:39.481" rpa="false" schemaversion="4">
+<suite id="s1" name="Swag Test" source="C:\Users\Matias Sanchez\PycharmProjects\swag_labs\features\swag_test.robot">
+<test id="s1-t1" name="Scenario: Enter the alerts page and test them" line="14">
+<kw name="Open_Site" library="settings" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_site}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231024 15:50:39.887" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<msg timestamp="20231024 15:50:39.890" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231024 15:50:39.890" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</msg>
+<status status="FAIL" starttime="20231024 15:50:39.886" endtime="20231024 15:50:39.893"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231024 15:50:39.894" endtime="20231024 15:50:39.894"/>
+</kw>
+<status status="FAIL" starttime="20231024 15:50:39.885" endtime="20231024 15:50:39.894"/>
+</kw>
+<kw name="Close_Test" library="settings" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231024 15:50:39.896" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20231024 15:50:39.895" endtime="20231024 15:50:39.896"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test Passed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231024 15:50:39.896" level="INFO">Test Passed</msg>
+<status status="PASS" starttime="20231024 15:50:39.896" endtime="20231024 15:50:39.897"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231024 15:50:39.897" endtime="20231024 15:50:39.897"/>
+</kw>
+<status status="PASS" starttime="20231024 15:50:39.894" endtime="20231024 15:50:39.897"/>
+</kw>
+<status status="FAIL" starttime="20231024 15:50:39.885" endtime="20231024 15:50:39.897">Setup failed:
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</status>
+</test>
+<doc>Loggin on the test site
+the user acesses
+check if all buttons are working</doc>
+<status status="FAIL" starttime="20231024 15:50:39.485" endtime="20231024 15:50:39.897"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Swag Test">Swag Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
